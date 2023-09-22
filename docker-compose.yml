@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+
+  web:
+    container_name: web
+    image: web:0.0.1
+    build:
+      context: angular/web
+      dockerfile: Dockerfile
+    ports:
+      - 4200:80
+    networks:
+      - apolo-compose-network
+
+networks:
+    apolo-compose-network:
+      driver: bridge
+
