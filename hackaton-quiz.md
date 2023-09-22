@@ -2,6 +2,9 @@
 
 ## Lindsay Powell 
 
+<img src="candidates/lindsay.png" width="200"> 
+
+
 |  Category        |  statement |
 |------------------|------------|
 |  top priorities  |   - childcare, healthcare, and student debt solutions needed, raising the minimum wage, more active recreation centers, expanded resources for libraries, walkable green spaces, and investments in critical infrastructure.  |
@@ -9,6 +12,8 @@
 | Jobs & the Economy    |   - Our local economy is fueled by small businesses, entrepreneurs and workers. Pennsylvania needs to protect its workers by raising the minimum wage and making it easier to start and grow businesses in our district.   |
  
 ## Erin Connolly Autenreith  
+
+<img src="candidates/erin.png" width="200"> 
 
 |  Category        |  statement |
 |------------------|------------|
