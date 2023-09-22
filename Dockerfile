@@ -23,7 +23,7 @@ RUN apk update && \
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
-COPY --from=builder_node /usr/src/app/dist/apolo /usr/share/nginx/html
+COPY --from=builder_node /usr/src/app/dist/hackaton /usr/share/nginx/html
 
 #COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./nginx.conf /etc/nginx/nginx.conf
