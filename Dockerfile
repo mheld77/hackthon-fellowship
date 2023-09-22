@@ -1,5 +1,5 @@
 # Stage 1 (to create a "build" image node)
-FROM node:10.16.1-alpine AS builder_node
+FROM node:18-alpine AS builder_node
 
 RUN apk update && \
     apk upgrade
@@ -30,10 +30,10 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 
 ###VOLUME ["/var/cache/nginx"]
 
-COPY docker-entrypoint.sh /usr/local/bin/
-RUN chmod a+x /usr/local/bin/docker-entrypoint.sh
+# COPY docker-entrypoint.sh /usr/local/bin/
+# RUN chmod a+x /usr/local/bin/docker-entrypoint.sh
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+# ENTRYPOINT ["docker-entrypoint.sh"]
 
 ###EXPOSE 9005
 EXPOSE 4200
