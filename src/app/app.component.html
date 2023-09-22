@@ -1,0 +1,91 @@
+<mat-card>
+  <mat-card-header>
+    This is a quiz to find your candidate
+  </mat-card-header>
+
+<mat-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>What are the priorities you resonate with?</ng-template>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">
+
+          Funding for police, improvements in education and increasing jobs in Allegheny County.
+
+        </mat-radio-button>
+        <mat-radio-button value="2">
+
+          Childcare, healthcare, and student debt solutions needed, raising the minimum wage, more active recreation centers, expanded resources for libraries, walkable green spaces, and investments in critical infrastructure.
+
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="How about Community Assets?">
+    <form [formGroup]="secondFormGroup">
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">
+
+          Our community deserves beautiful and accessible spaces to enjoy. We need more active recreation centers, expanded resources for libraries, walkable green spaces, and investments in critical infrastructure.
+
+        </mat-radio-button>
+        <mat-radio-button value="2">
+
+          I want them (community) to do so much better with reducing crime in our city.
+
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>How about Jobs & the Economy?</ng-template>
+    <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">
+
+          I want our schools to be so much better with performance, and for kids to graduate knowing how to get a job, and I want the Pittsburgh area to grow again with jobs, and I don’t know if they are going to have that kind of initiative.
+
+        </mat-radio-button>
+        <mat-radio-button value="2">
+          Our local economy is fueled by small businesses, entrepreneurs and workers. Pennsylvania needs to protect its workers by raising the minimum wage and making it easier to start and grow businesses in our district.
+
+        </mat-radio-button>
+    </mat-radio-group>
+    <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Results</ng-template>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>Lindsay Powell</mat-card-title>
+          <mat-card-subtitle><a href="url">https://www.lindsaypowellforpa.com</a></mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <p>People Powered, Policy Focused</p>
+
+        <p>Housing - Every Pittsburgher should have access to safe and dignified housing. We must invest in building new and rehabbing existing housing to expand the city’s housing stock and create a city affordable to all.</p>
+
+        <p>Working Families - Families across our districts are worried about keeping their heads above water and making sure that their children have a bright future ahead of them. I believe without addressing rising childcare costs, healthcare reform and addressing student debt, we are failing families in our community.</p>
+
+        <p>Jobs & the Economy - Our local economy is fueled by small businesses, entrepreneurs and workers. Pennsylvania needs to protect its workers by raising the minimum wage and making it easier to start and grow businesses in our district.</p>
+
+        <p>Community Assets - Our community deserves beautiful and accessible spaces to enjoy. We need more active recreation centers, expanded resources for libraries, walkable green spaces, and investments in critical infrastructure.</p>
+      </mat-card-content>
+    </mat-card>
+    
+  </mat-step>
+</mat-stepper>
+
+</mat-card>
