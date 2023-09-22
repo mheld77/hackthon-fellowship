@@ -6,7 +6,7 @@ services:
     container_name: web
     image: web:0.0.1
     build:
-      context: angular/web
+      #context: angular/web
       dockerfile: Dockerfile
     ports:
       - 4200:80
